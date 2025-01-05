@@ -84,8 +84,6 @@ export default class LGraphBridge {
                 node.onResize(node.size);
             node.resizable=false;
             this.NodeLoading=false;
-            //window.graph
-          //  var node = LiteGraph.createNode(n_info.type, n_info.title);
         };
         this.init = async () => {
             await this.native.init();

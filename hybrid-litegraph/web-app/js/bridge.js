@@ -1,6 +1,7 @@
 export class Bridge {
     constructor() {
         this.init = async () => {
+            console.log("init")
             window.bridges = {};
             window.bridges.bridge = this;
             this.registerBridge = async (js, name) => {

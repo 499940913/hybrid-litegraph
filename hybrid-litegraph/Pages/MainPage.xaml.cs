@@ -1,5 +1,7 @@
 ﻿using dotnetCampus.Threading;
+using hybrid_litegraph.bridge;
 using Microsoft.Web.WebView2.Core;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -34,6 +36,8 @@ namespace hybrid_litegraph.Pages
                     if (Loaded_)
                         break;
                     await webView.EnsureCoreWebView2Async(null);
+                    webView.CoreWebView2.AddHostObjectToScript("bridges", new Bridges());
+                    JSMapExecutorExt.coreWebView_ = webView.CoreWebView2;
                     navigationStartingEvent = new AsyncAutoResetEvent(false);
                     navigationCompletedEvent = new AsyncAutoResetEvent(false);
                     webView.CoreWebView2.SetVirtualHostNameToFolderMapping("127.0.0.1",

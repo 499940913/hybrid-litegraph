@@ -1,3 +1,4 @@
+import { Bridge } from './bridge.js';
 const graph = new LGraph();
 const mycanvas = document.getElementById('mycanvas');
 mycanvas.width = window.innerWidth;
@@ -28,6 +29,6 @@ document.addEventListener('keydown', function (event) {
 	}
 });
 updateEditorHiPPICanvas();
-//import { Bridge } from './bridge.js';
-//const bridge = new Bridge();
-//await bridge.init();
+
+const bridge = new Bridge();
+await bridge.init();
