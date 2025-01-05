@@ -1,0 +1,55 @@
+﻿<ui:FluentWindow x:Class="hybrid_litegraph.MainWindow"
+                 xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:local="clr-namespace:hybrid_litegraph.ViewModel"
+                 mc:Ignorable="d" 
+    ExtendsContentIntoTitleBar="True"
+    WindowBackdropType="Mica"
+    WindowCornerPreference="Default"
+    WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800" x:Name="window">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ui:TitleBar
+            x:Name="TitleBar"
+            Title="LiteGraph Demo"
+            Grid.Row="0"
+            CloseWindowByDoubleClickOnIcon="True">
+            <ui:TitleBar.Icon>
+                <ui:SymbolIcon Symbol="Apps48" />
+            </ui:TitleBar.Icon>
+        </ui:TitleBar>
+        <ui:NavigationView Margin="0,0,4,4" IsPaneOpen="False"  Grid.Row="1" OpenPaneLength="150"   x:Name="RootNavigationView" IsBackButtonVisible="Collapsed" PaneDisplayMode="Left"  
+                Transition="FadeInWithSlide"      MenuItemsSource="{Binding NavigationItems, Mode=OneWay}" >
+            <ui:NavigationView.Header>
+                <Menu Background="#202020"
+      Margin="0" >
+                    <ui:MenuItem Header="Open" Icon="{ui:SymbolIcon FolderOpen24}" CommandParameter="{Binding  ElementName=window,Path=PageService}">
+                    </ui:MenuItem>
+                    <Separator />
+                    <ui:MenuItem
+              
+           CommandParameter="{Binding  ElementName=window,Path=PageService}"
+               Foreground="{DynamicResource PaletteGreenBrush}"
+               Icon="{ui:SymbolIcon Play24}">
+                    </ui:MenuItem>
+                </Menu>
+            </ui:NavigationView.Header>
+            <ui:NavigationView.AutoSuggestBox>
+                <ui:AutoSuggestBox x:Name="AutoSuggestBox" PlaceholderText="Search">
+                    <ui:AutoSuggestBox.Icon>
+                        <ui:IconSourceElement>
+                            <ui:SymbolIconSource Symbol="Search24" />
+                        </ui:IconSourceElement>
+                    </ui:AutoSuggestBox.Icon>
+                </ui:AutoSuggestBox>
+            </ui:NavigationView.AutoSuggestBox>
+        </ui:NavigationView>
+    </Grid>
+</ui:FluentWindow>

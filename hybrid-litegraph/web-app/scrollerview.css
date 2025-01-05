@@ -1,0 +1,27 @@
+﻿::-webkit-scrollbar {
+    width: 8px; /* 滚动条宽度 */
+    background-color: #1a1a1a; /* 滚动条轨道背景色，这里设置为较暗的颜色 */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444; /* 滚动条滑块颜色 */
+    border-radius: 4px; /* 滑块边角圆润度 */
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #666; /* 鼠标悬停在滑块上时的颜色变化 */
+    }
+
+/* Firefox */
+scrollbar-width: thin;
+scrollbar-color: #444 #1a1a1a; /* 滑块颜色 轨道颜色 */
+/* Internet Explorer 和 Edge */
+-ms-overflow-style: none; /* 隐藏IE和Edge默认滚动条样式 */
+scrollbar-base-color: #1a1a1a; /* 滚动条基础颜色 */
+scrollbar-face-color: #444; /* 滚动条表面（滑块）颜色 */
+scrollbar-3dlight-color: #1a1a1a; /* 滚动条立体光颜色（IE特定） */
+scrollbar-highlight-color: #1a1a1a; /* 滚动条高亮颜色（IE特定） */
+scrollbar-shadow-color: #1a1a1a; /* 滚动条阴影颜色（IE特定） */
+scrollbar-darkshadow-color: #1a1a1a; /* 滚动条深阴影颜色（IE特定） */
+scrollbar-track-color: #1a1a1a; /* 滚动条轨道颜色 */
+scrollbar-arrow-color: #ccc; /* 滚动条箭头颜色 */
