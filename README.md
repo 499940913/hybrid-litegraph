@@ -1,4 +1,4 @@
-<h2 id="Uezi0">应用</h2>
+<h2 id="Uezi0">示例</h2>
 
 ![](https://github.com/499940913/hybrid-litegraph/blob/main/image.png)
 
