@@ -1,7 +1,5 @@
 <h2 id="Uezi0">应用</h2>
-![](https://cdn.nlark.com/yuque/0/2025/png/52108939/1735829569371-87ef6e60-c5e7-499f-b424-4e9c7d0f5a2e.png)
-
-+ 示例为一个集成litegraph.js流程编辑器机器视觉相关的**hybrid-app**，主要开发语言为C#、html/js及C++。下图为大致技术架构图：
+下图为大致技术架构图：
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/52108939/1735833826839-4691f46d-0490-4bc8-8239-38f99341a7a4.png)
 
