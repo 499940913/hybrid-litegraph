@@ -3,8 +3,8 @@
 ![](https://github.com/499940913/hybrid-litegraph/blob/main/image.png)
 
 下图为大致技术架构图：
+![image](https://github.com/user-attachments/assets/288f9624-6587-47de-9f7d-4daaeec422da)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/52108939/1735833826839-4691f46d-0490-4bc8-8239-38f99341a7a4.png)
 
 <h2 id="G3DcL">他山之石 可以攻玉</h2>
 <h3 id="FnnBG">github上的节点编辑器</h3>
