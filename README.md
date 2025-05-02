@@ -4,7 +4,7 @@
 
 下图为大致技术架构图：
 ![image](https://github.com/user-attachments/assets/288f9624-6587-47de-9f7d-4daaeec422da)
-![详细设计参考]([https://cdn.nlark.com/yuque/0/2025/png/52108939/1735998914767-535efd8f-c0ee-442c-8677-5c61791bbcbe.png](https://deepwiki.com/499940913/hybrid-litegraph))
+[ComfyUI桌面]([https://cdn.nlark.com/yuque/0/2025/png/52108939/1735998914767-535efd8f-c0ee-442c-8677-5c61791bbcbe.png](https://deepwiki.com/499940913/hybrid-litegraph)
 <h2 id="G3DcL">他山之石 可以攻玉</h2>
 <h3 id="FnnBG">github上的节点编辑器</h3>
 [https://github.com/topics/node-editor](https://github.com/topics/node-editor)
